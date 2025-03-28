@@ -188,6 +188,30 @@ Agora qualquer pessoa pode acessar sua página! 🚀
 
 ---
 
+## Deploy com Doker
+
+## Ajuste as variáveis de ambiente do .env
+Adicione o token do telegram e chat_id, o chat_id começa com -
+
+```bash
+TELEGRAM_BOT_TOKEN=DIGITE O TOKEN
+TELEGRAM_CHAT_ID=DIGITE O GRUPO
+
+```
+
+## Criando a imagem do projeto
+```bash
+docker build teste .
+docker run -p 8088:8088 --rm --name meu-container teste
+
+```
+
+## Acesse localhost para visualizar se API está funcionando
+```bash
+Abra o navegador e acesse:
+http://localhost:8088/comprovante
+
+```
 ## Conclusão
 Agora você tem o projeto BackScan rodando do zero no Ubuntu, mesmo sem experiência em programação. 🚀
 
